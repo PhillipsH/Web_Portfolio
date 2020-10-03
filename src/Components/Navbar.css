@@ -1,0 +1,40 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+nav {
+    order: 1;
+}
+.nav-links a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
