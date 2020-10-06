@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NavbarScroll.css'
+import './Styles/NavbarScroll.css'
 export class ScrollNavbar extends Component {
 
   constructor(props){

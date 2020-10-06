@@ -1,5 +1,5 @@
 import React from 'react';
-import './MediaFile.css';
+import './Styles/MediaFile.css';
 
 class MediaFile extends React.Component{
     constructor(props){

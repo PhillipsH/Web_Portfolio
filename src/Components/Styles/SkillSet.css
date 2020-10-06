@@ -1,0 +1,24 @@
+.skill-section{
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+}
+.skill-container{
+    text-align: center;
+}
+.skill-card{
+    padding:30px;
+    border:none;
+}
+.cardie-image{
+    width:500px;
+    height:5000px;
+
+}
+.CardType{
+    width:50px;
+    height:5000px;
+}
+

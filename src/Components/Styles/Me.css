@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+#me-tron{
+    background:#FFF;
+    height:500px;
+    text-align: center;
+    margin-top:50px;
+    padding-left:350px;
+    padding-right:350px;
+    overflow:hidden;
+}
+
+#name {
+    margin: 0;
+    text-align: center;
+    color:#04283F;
+    font-size: 80px;
+}
+
+#text-container{
+    width:100%;
+
+} 
+#type-text {
+    border-right: solid 3px  #c9af98;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+    color:  #c9af98;
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+#type-text {
+animation: animated-text 1s steps(8,end) 1s 1 normal both,
+            animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+from{width: 0;}
+to{width: 155px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+from{border-right-color:  #c9af98;}
+to{border-right-color: transparent;}
+}

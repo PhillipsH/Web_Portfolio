@@ -1,0 +1,53 @@
+.timeline-container{
+    display:flex;
+    height:250px;
+    width:100%;
+}
+.left-container{
+    height:100%;
+    padding:0;
+    flex:10;
+    padding:10px;
+}
+.mid-container{
+    flex:1;
+    width: 60%;
+    height: 100px;
+    text-align:center;
+    height:100%;
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: #DBABBE;
+    border-radius: 50%;  
+    margin:0 auto;
+}
+span.middleLine{
+    display:inline-block;
+    border-right: 2px solid;
+    border-color:#999999;
+    margin-left:-1px; /* cause the border is 2px */
+    height:100%;
+}
+
+.right-container{
+    height:100%;
+    flex:10;
+    padding:10px;
+}
+.timeline-content{
+    height:100%;
+    width:100%;
+    border:solid;
+    border-radius:10px;
+    border-color:#DBABBE;
+    text-align:center;
+    padding:10px;
+}
+.experience-title{
+    color: #DBABBE;
+    font-weight:bold;
+    font-size:1.5em
+}
+
