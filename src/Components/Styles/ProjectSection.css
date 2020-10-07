@@ -1,0 +1,23 @@
+.project-board{
+}
+.project-box{
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:25px;
+    width:80%;
+    background: rgb(252,218,218);
+    padding:2%;
+}
+.project-title{
+    text-align:center;
+}
+.project-pic{
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    margin-top:50px;
+}
+.project-body{
+    padding:3%;
+}

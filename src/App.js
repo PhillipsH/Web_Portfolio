@@ -7,19 +7,19 @@ import TechnologyBoard from './Components/TechnologyBoard';
 import NavbarScroll from './Components/NavbarScroll'
 import TitleSection from './Components/TitleSection'
 import ExperienceSkills from './Components/ExperienceSkills';
-
+import ProjectSection from './Components/ProjectSection';
 
 
 function App() {
   return (
     <div className="App">
-      <div id='container'></div>
       <NavbarScroll></NavbarScroll>
       <Me></Me>
-      <TitleSection></TitleSection>
+      <TitleSection title='Skills'></TitleSection>
       <TechnologyBoard></TechnologyBoard>
       <ExperienceSkills></ExperienceSkills>
-      <TitleSection></TitleSection>
+      <TitleSection title='Projects'></TitleSection>
+      <ProjectSection></ProjectSection>
     </div>
   );
 }

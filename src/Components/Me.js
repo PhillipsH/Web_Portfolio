@@ -14,7 +14,7 @@ const Example = (props) => {
             Hello, I'm Phillips a recent BCIT grad in Computer Systems Technology taking the Cloud Computing Option. 
             I'm currently living in Vancouver, B.C. I enjoy creating all kinds of things in JavaScript/Node.js, Python and C++. 
             I'm always eager to learn new technologies especially when it comes to software development. 
-            ome things I like to do outside of Software Development is listening to music, building keyboard and gaming.
+            Some things I like to do outside of Software Development is listening to music, building keyboards and gaming.
           </p>
       </Jumbotron>
   );
