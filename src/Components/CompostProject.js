@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import keebImg from '../Assets/keebie.PNG'
+import keebImg from '../Assets/compostking.png'
 import mernImg from '../Assets/mern.jpg'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './Styles/Project.css';
@@ -17,7 +17,7 @@ const CompostProject = (props) => {
     return (
       <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-          <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={toggle}>CompostKing</ModalHeader>
           <ModalBody>
           <img className={'project-pic'} src={keebImg}></img>
           <img id='mern-img' src={mernImg}></img>
@@ -29,7 +29,7 @@ const CompostProject = (props) => {
           </ModalFooter>
         </Modal>
         <div className="project-box" onClick={toggle}>
-            <h2 className='project-title'>Keebie.io</h2>
+            <h2 className='project-title'>Compost King</h2>
             <img className={'project-pic'} src={keebImg}></img>
         </div>
       </div>
