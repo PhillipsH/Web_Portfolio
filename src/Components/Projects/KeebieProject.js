@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import keebImg from '../Assets/keebie.PNG'
-import mernImg from '../Assets/mern.jpg'
+import keebImg from '../../Assets/keebie.PNG'
+import mernImg from '../../Assets/mern.jpg'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import './Styles/Project.css';
+import '../Styles/Project.css';
 
 const Project = (props) => {
     const {
@@ -38,7 +38,7 @@ const Project = (props) => {
           </ModalFooter>
 
         </Modal>
-        <div className="project-box" onClick={toggle}>
+        <div id='keebie-box' className="project-box" onClick={toggle}>
             <h2 className='project-title'>Keebie.io</h2>
             <img className={'project-pic'} src={keebImg}></img>
         </div>

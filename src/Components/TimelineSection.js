@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import './Styles/Section.css'
+import './Styles/Timeline.css'
 
 class Section extends React.Component{
     constructor(props){
         super(props)
         let container = (
         <div className='timeline-content' style={{borderColor: this.props.color}}>
-            <span className='experience-title' style={{color: this.props.color}}>2019-2020<br></br></span>
-            <span className='experience-title' style={{color: this.props.color}}>BCIT (CST-Cloud Computing)</span>
+            <span className='experience-title' >{this.props.date}<br></br></span>
+            <span className='experience-title' style={{color: this.props.color}}>{this.props.title}</span><br></br>
+            <div class='timeline-content-text'>
+                <span>{this.props.content}</span>
+            </div>
         </div>
          )
 

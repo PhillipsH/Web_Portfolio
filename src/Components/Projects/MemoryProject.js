@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import memoryImg from '../Assets/memory.png'
+import memoryImg from '../../Assets/memory.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import './Styles/Project.css';
+import '../Styles/Project.css';
 
 const MemoryProject = (props) => {
     const {
@@ -36,7 +36,7 @@ const MemoryProject = (props) => {
         </ModalFooter>
 
         </Modal>
-        <div className="project-box" onClick={toggle}>
+        <div id='memory-box' className="project-box" onClick={toggle}>
             <h2 className='project-title'>Memory Game</h2>
             <img className={'project-pic'} src={memoryImg}></img>
         </div>

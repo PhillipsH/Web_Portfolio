@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .timeline-container{
+    font-family: 'Roboto', sans-serif;
     display:flex;
-    height:250px;
     width:100%;
 }
 .left-container{
@@ -12,7 +13,6 @@
 .mid-container{
     flex:1;
     width: 60%;
-    height: 100px;
     text-align:center;
     height:100%;
 }
@@ -40,14 +40,19 @@ span.middleLine{
     height:100%;
     width:100%;
     border:solid;
+    border-width:3px;
     border-radius:10px;
-    border-color:#DBABBE;
     text-align:center;
     padding:10px;
 }
 .experience-title{
-    color: #DBABBE;
+    color: gray;
     font-weight:bold;
     font-size:1.5em
+}
+.timeline-content-text{
+    padding:10px;
+    text-align: left;
+    font-size:1.2em;
 }
 

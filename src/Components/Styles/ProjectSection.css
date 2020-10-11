@@ -7,6 +7,7 @@
     border-radius:25px;
     width:80%;
     background: rgb(252,218,218);
+    background: linear-gradient(180deg, rgba(252,218,218,1) 0%, rgba(190,250,255,1) 100%);
     padding:2%;
 }
 .project-title{

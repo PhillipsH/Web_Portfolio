@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import knowledgeImg from '../Assets/knowledge.png'
-import mernImg from '../Assets/mern.jpg'
+import knowledgeImg from '../../Assets/knowledge.png'
+import mernImg from '../../Assets/mern.jpg'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import './Styles/Project.css';
+import '../Styles/Project.css';
 
 const KnowledgeProject = (props) => {
     const {
@@ -38,7 +38,7 @@ const KnowledgeProject = (props) => {
         </ModalFooter>
 
         </Modal>
-        <div className="project-box" onClick={toggle}>
+        <div id='knowledge-box' className="project-box" onClick={toggle}>
             <h2 className='project-title'>KnowledgeBase</h2>
             <img className={'project-pic'} src={knowledgeImg}></img>
         </div>

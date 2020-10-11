@@ -8,7 +8,7 @@ import PercentageBox from './PercentageBox';
 
 const Example = (props) => {
   return (
-    <div id = 'tech-container'>
+    <div id = 'skills'>
       <PercentageBox title={'Web-Dev'} percent={'75'} color={'#ec0101'}></PercentageBox>
       <PercentageBox title={'Python'} percent={'80'} color={'#306998'} color2='FFD43B'></PercentageBox>
       <PercentageBox title={'Javascript / Node.js'} percent={'85'} color={'#03a9f4'}></PercentageBox>

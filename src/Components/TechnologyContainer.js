@@ -21,7 +21,7 @@ import mysqlImg from '../Assets/mysql.svg';
 import './Styles/SkillSet.css'
 
 
-class SkillSet extends React.Component{
+class TechnologyContainer extends React.Component{
 
     render(){
         return(
@@ -113,4 +113,4 @@ class SkillSet extends React.Component{
         )
     }
 }
-export default SkillSet
+export default TechnologyContainer

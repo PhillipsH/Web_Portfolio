@@ -4,11 +4,11 @@ export class ScrollNavbar extends Component {
 
   constructor(props){
     super(props);
-    this.state = {show: "topShow"}
+    this.state = {show: "top-show"}
+    this.prevScrollpos = window.pageYOffset;
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this), { passive: true })
-    var prevScrollpos = window.pageYOffset;
 
   }
 
@@ -18,16 +18,17 @@ export class ScrollNavbar extends Component {
 
 
   
-  handleScroll(event, obj){
+  handleScroll(){
+    console.log("scroll pos " + this.prevScrollpos)
     console.log("scroll pos " + this.prevScrollpos)
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos == 0) {
-      this.setState({show: "topShow"})
+      this.setState({show: "top-show"})
     }
     else if (this.prevScrollpos < currentScrollPos || currentScrollPos == 400) {
-      this.setState({show: "noShow"})
+      this.setState({show: "no-show-bar"})
     } else {
-      this.setState({show: "show"})
+      this.setState({show: "show-bar"})
     }
     this.prevScrollpos = currentScrollPos;
   }
@@ -35,11 +36,11 @@ export class ScrollNavbar extends Component {
 
   render() {
     return (
-      <div>
+      <div className={this.state.show} id={'navbar-container'}>
         <ul className={this.state.show} id={'navbar'}>
-          <li><a href="#education">About</a></li>
-          <li><a href="#education">Contact</a></li>
-          <li><a href="#education">Notes</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+          <li><a>Notes</a></li>
         </ul>
       </div>
     )

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import homerImg from '../Assets/homerbot.png'
-import mernImg from '../Assets/mern.jpg'
+import homerImg from '../../Assets/homerbot.png'
+import mernImg from '../../Assets/mern.jpg'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import './Styles/Project.css';
+import '../Styles/Project.css';
 
 const HomerbotProject = (props) => {
     const {
@@ -49,7 +49,7 @@ const HomerbotProject = (props) => {
           </ModalFooter>
 
         </Modal>
-        <div className="project-box" onClick={toggle}>
+        <div id='homer-box' className="project-box" onClick={toggle}>
             <h2 className='project-title'>HomerBot</h2>
             <img className={'project-pic'} src={homerImg}></img>
         </div>

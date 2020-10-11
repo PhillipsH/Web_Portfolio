@@ -1,25 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
 import Me from './Components/Me';
-import TechnologyBoard from './Components/TechnologyBoard';
+import PercentContainer from './Components/PercentContainer';
 import NavbarScroll from './Components/NavbarScroll'
 import TitleSection from './Components/TitleSection'
-import ExperienceSkills from './Components/ExperienceSkills';
-import ProjectSection from './Components/ProjectSection';
+import ExperienceSkillsContainer from './Components/ExperienceSkillsContainer';
+import ProjectsContainer from './Components/ProjectsContainer';
+import Navbar from './Components/Navbar';
 
 
 function App() {
   return (
     <div className="App">
-      <NavbarScroll></NavbarScroll>
       <Me></Me>
       <TitleSection title='Skills'></TitleSection>
-      <TechnologyBoard></TechnologyBoard>
-      <ExperienceSkills></ExperienceSkills>
+      <PercentContainer id='skills'></PercentContainer>
+      <ExperienceSkillsContainer id='experience'></ExperienceSkillsContainer>
       <TitleSection title='Projects'></TitleSection>
-      <ProjectSection></ProjectSection>
+      <ProjectsContainer id='works'></ProjectsContainer>
+      <Navbar></Navbar>
+
     </div>
   );
 }

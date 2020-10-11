@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap');
+.project-board{
+}
+.project-box{
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:25px;
+    width:80%;
+    padding:2%;
+    cursor: pointer;
+}
+.project-title{
+    text-align:center;
+    font-family: 'Secular One', sans-serif;
+    font-size:3em;
+}
+.project-pic{
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    margin-top:50px;
+}
+.project-body{
+    padding:3%;
+}
 .modal-project{
     max-width:none;
     max-height:none;
@@ -13,3 +39,37 @@
     font-size:1.5em;
     font-weight: bold;
 }
+#android-img{
+    width:auto;
+    max-height:800px;
+}
+
+#compost-box{
+    background: rgb(252,218,218);
+    background: linear-gradient(180deg, rgba(252,218,218,1) 0%, rgba(190,250,255,1) 100%);
+}
+#devops-box{
+    background: rgb(133,199,222);
+    background: linear-gradient(180deg, rgba(133,199,222,1) 0%, rgba(207,232,239,1) 100%);
+}
+#homer-box{
+    background: rgb(252,218,218);
+    background: linear-gradient(180deg, rgba(252,218,218,1) 0%, rgba(190,250,255,1) 100%);
+}
+#keebie-box{
+    background: rgb(250,237,203);
+    background: linear-gradient(180deg, rgba(250,237,203,1) 0%, rgba(249,198,201,1) 100%);
+}
+#knowledge-box{
+    background: rgb(193,251,164);
+    background: linear-gradient(180deg, rgba(193,251,164,1) 0%, rgba(255,239,159,1) 100%);
+}
+#memory-box{
+    background: rgb(255,241,230);
+    background: linear-gradient(180deg, rgba(255,241,230,1) 0%, rgba(153,193,222,1) 100%);
+}
+#washroom-box{
+    background: rgb(237,220,210);
+    background: linear-gradient(180deg, rgba(237,220,210,1) 0%, rgba(250,210,225,1) 100%);
+}
+
