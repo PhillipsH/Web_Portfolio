@@ -44,8 +44,6 @@ const HomerbotProject = (props) => {
             </p>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={toggle}>Website</Button>{' '}
-            <Button color="secondary" onClick={toggle}>Github</Button>
           </ModalFooter>
 
         </Modal>

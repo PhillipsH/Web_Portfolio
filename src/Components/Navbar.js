@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Styles/Navbar.css'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import githubImg from '../Assets/github.svg'
+import linkedInImg from '../Assets/linkedin.svg'
+import emailImg from '../Assets/envelope.svg'
+import {Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 class Navbar extends React.Component{
@@ -28,8 +31,6 @@ class Navbar extends React.Component{
     
       
     handleScroll(){
-    console.log("scroll pos " + this.prevScrollpos)
-    console.log("scroll pos " + this.prevScrollpos)
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos == 0) {
         this.setState({show: "top-show"})
@@ -46,19 +47,17 @@ class Navbar extends React.Component{
         return(
             
             <div className={'navbar-container ' + this.state.show}>
-            <Modal isOpen={this.state.modal} toggle={this.toggle} className={"modal-project"}>
-            <ModalHeader toggle={this.toggle}>Contact Page</ModalHeader>
-            <ModalBody>
-                <li><a href="Email">Skills</a></li>
-                <li><a href="Github">Experience</a></li>
-                <li><a href="LinkedIn">Works</a></li>
-                <li><a href=""  onClick={this.toggle}>Contact</a></li>
-            </ModalBody>
-            <ModalFooter>
-                <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-            </ModalFooter>
-            </Modal>
+                <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                <ModalHeader toggle={this.toggle}>Contact Page</ModalHeader>
+                <ModalBody>
+                    <li><img src={emailImg}></img><a href="">phillipshalim@gmail.com</a> </li>
+                    <li><img src={githubImg}></img><a href="https://github.com/PhillipsH"> Github</a></li>
+                    <li><img src={linkedInImg}></img><a href="https://www.linkedin.com/in/phillips-halim"> LinkedIn</a></li>
+                </ModalBody>
+                <ModalFooter>
+
+                </ModalFooter>
+                </Modal>
                 <h2 id='site-name'>Phillips Halim</h2>
                 <nav>
                     <ul class = "nav-links">
@@ -68,8 +67,7 @@ class Navbar extends React.Component{
                         <li><a href="#contact"  onClick={this.toggle}>Contact</a></li>
                     </ul>
                 </nav>
-
-                </div>
+            </div>
         )
     }
 }

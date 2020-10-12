@@ -39,9 +39,9 @@
     font-size:1.5em;
     font-weight: bold;
 }
-#android-img{
+.android-img{
     width:auto;
-    max-height:800px;
+    max-height:500px;
 }
 
 #compost-box{

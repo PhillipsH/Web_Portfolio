@@ -33,8 +33,8 @@ const Project = (props) => {
             </p>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={toggle}>Website</Button>{' '}
-            <Button color="secondary" onClick={toggle}>Github</Button>
+            <a href='https://www.google.com'><Button color="primary" onClick={toggle}>Website</Button></a>
+            <a href='https://www.google.com'><Button color="secondary" onClick={toggle}>Github</Button></a>
           </ModalFooter>
 
         </Modal>

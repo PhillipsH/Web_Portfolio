@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import keebImg from '../../Assets/compostking.png'
-import mernImg from '../../Assets/mern.jpg'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
@@ -20,12 +19,16 @@ const CompostProject = (props) => {
           <ModalHeader toggle={toggle}>CompostKing</ModalHeader>
           <ModalBody>
           <img className={'project-pic'} src={keebImg}></img>
-          <img id='mern-img' src={mernImg}></img>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <span className='modal-title'>Problem</span><br></br>
+          <p>Me and a group of students were given the task of creating a app that would help prevent waste. The one requirement we were given was that the application needed to be a mobile friendly web app. We thought it was best to create a game for children to teach them about composting. 
+            </p><br></br>
+          <span className='modal-title'>Technologies Used</span><br></br>
+          <p>We built this application using HTML, CSS , and Javascript. We used the Javascript framework, Phaser.js for all the gameplay of the app. The database was built using Firebase Firestore.</p>
+          <span className='modal-title'>Notes</span>
+          <p>Creating this web app was a journey as I have never hosted a completed website with a working database and a game before. Learning all these new technologies and how to connect them was incredibly enjoyable.</p>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={toggle}>Cancel</Button>
+            <a href='https://www.google.com'><Button color="secondary" onClick={toggle}>Github</Button></a>
           </ModalFooter>
         </Modal>
         <div id='compost-box' className="project-box" onClick={toggle}>

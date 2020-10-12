@@ -20,19 +20,16 @@ const MemoryProject = (props) => {
         <ModalBody className='project-body'>
         <img className={'project-pic'} src={memoryImg}></img>
         <span className='modal-title'>Problem</span><br></br>
-        <p>A hobby that i recently got in to was the art of building keyboards. One thing that I couldn't find online was one website with the information of switches from
-            all kinds of brands. I decided to build one for myself and other keyboard enthusists who may find this website useful.</p><br></br>
+        <p>To create a game where users could improve their memory while making it a fun and simple task.</p><br></br>
         <span className='modal-title'>Technologies Used</span><br></br>
-        <p>This website was build using the MERN (Mongodb, Express, React.js, Node.js) stack. I implemented Redux to manage the application state, as the state had to change
-            after retreiving from the database. </p>
+        <p>This website was a project I made using HTML, CSS and Node.js. The leaderboards database that was chosen for this website was MySQL as I had previous projects built using MySQL.</p>
         <span className='modal-title'>Notes</span>
-        <p>Overall this was a fun side-project to create, giving me a better understanding of how redux works, and how useful it is after it has been implemented.
-            This was my first project using mongodb, which I found simple to get started with.
+        <p>This was a fun project to work on because it was something that you were actually able to interact with and play with afterwards.
         </p>
         </ModalBody>
         <ModalFooter>
-        <Button color="primary" onClick={toggle}>Website</Button>{' '}
-        <Button color="secondary" onClick={toggle}>Github</Button>
+        <a href='https://www.google.com'><Button color="primary" onClick={toggle}>Website</Button></a>
+            <a href='https://www.google.com'><Button color="secondary" onClick={toggle}>Github</Button></a>
         </ModalFooter>
 
         </Modal>
