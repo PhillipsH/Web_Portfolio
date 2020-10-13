@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Container, Row, Col
-} from 'reactstrap';
-import './Styles/TechnologyBoard.css'
+import './Styles/Percent.css'
 import PercentageBox from './PercentageBox';
 
 const Example = (props) => {

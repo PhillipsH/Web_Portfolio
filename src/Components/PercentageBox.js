@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/MediaFile.css';
+import './Styles/Percent.css';
 
 class MediaFile extends React.Component{
     constructor(props){

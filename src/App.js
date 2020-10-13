@@ -1,9 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Me from './Components/Me';
 import PercentContainer from './Components/PercentContainer';
-import NavbarScroll from './Components/NavbarScroll'
 import TitleSection from './Components/TitleSection'
 import ExperienceSkillsContainer from './Components/ExperienceSkillsContainer';
 import ProjectsContainer from './Components/ProjectsContainer';

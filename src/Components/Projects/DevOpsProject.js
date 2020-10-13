@@ -20,15 +20,11 @@ const DevOpsProject = (props) => {
           <ModalBody>
           <img className={'project-pic'} src={pipelineImg}></img>
           <span className='modal-title'>Problem</span><br></br>
-          <p>Me and a group with students worked with the City of New Westminster to use their city's API's to create an application. 
-            We ended creating an Android app to find public washrooms that are located close to you.
-             Users were also able to review and rate each washroom they went to as well as locate the fastest way to get there.</p><br></br>
+          <p>Create a pipeline that hosts a web app  making it easier to develop and test.</p><br></br>
           <span className='modal-title'>Technologies Used</span><br></br>
-          <p>We built this application using Android Studio and using Java as the primary language. We used RESTful API's such as the cities API and the Google Maps API to recieve data. 
-            Finally, for the reviews and ratings was built using Google's Firebase</p>
+          <p>The app we hosted was a simple snake game. We used github, TravisCI, docker and heroku for the pipelien.</p>
           <span className='modal-title'>Notes</span>
-          <p>Android Studio was incredibly difficult to work with in the beginning because at times when we would pull from git, the application wouldn't work on some of our groupmates computers while working on others.
-            Eventually we got the hang of this problem by messing with the gradle versions.
+          <p>
           </p>
           </ModalBody>
           <ModalFooter>

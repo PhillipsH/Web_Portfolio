@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    Card, CardBody,
+    CardTitle
 } from 'reactstrap';
 
 import jsImg from '../Assets/javascript.png'
@@ -18,7 +18,7 @@ import jenkinsImg from '../Assets/jenkins.png'
 import mongodbImg from '../Assets/mongodb.png';
 import postgresqlImg from '../Assets/postgresql.png';
 import mysqlImg from '../Assets/mysql.svg';
-import './Styles/SkillSet.css'
+import './Styles/TechnologyContainer.css'
 
 
 class TechnologyContainer extends React.Component{
@@ -31,31 +31,31 @@ class TechnologyContainer extends React.Component{
                     <Card className='skill-card'>
                         <img src = {jsImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>Javascript</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {pythonImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>Python</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {cppImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>C++</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {htmlImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>HTML</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {cssImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>CSS</CardTitle>
                         </CardBody>
                      </Card>
                      
@@ -65,25 +65,25 @@ class TechnologyContainer extends React.Component{
                     <Card className='skill-card'>
                         <img src = {awsImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>AWS</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {dockerImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>Docker</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {herokuImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>Heroku</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {jenkinsImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>Jenkins</CardTitle>
                         </CardBody>
                      </Card>
                 </div>
@@ -92,19 +92,19 @@ class TechnologyContainer extends React.Component{
                     <Card className='skill-card'>
                         <img src = {mongodbImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>mongoDB</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {postgresqlImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>postgreSQL</CardTitle>
                         </CardBody>
                      </Card>
                      <Card className='skill-card'>
                          <img src = {mysqlImg} height='150'></img>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
+                            <CardTitle>MySQL</CardTitle>
                         </CardBody>
                      </Card>
 

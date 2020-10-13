@@ -1,8 +1,6 @@
 import React from 'react';
-import './Styles/ProjectSection.css';
-import keebImg from '../Assets/keebie.PNG'
+import './Styles/Project.css';
 import KeebieProject from './Projects/KeebieProject'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import HomerbotProject from './Projects/HomerbotProject';
 import KnowledgeProject from './Projects/KnowledgeProject';
 import WashroomProject from './Projects/WashroomProject';
