@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Styles/Navbar.css'
 import githubImg from '../Assets/github.svg'
 import linkedInImg from '../Assets/linkedin.svg'
@@ -26,16 +26,15 @@ class Navbar extends React.Component{
     }
     toggle = () =>{
         this.setState({modal:!this.state.modal});
-        console.log(this.state.modal)
     };
     
       
     handleScroll(){
     var currentScrollPos = window.pageYOffset;
-    if (currentScrollPos == 0) {
+    if (currentScrollPos === 0) {
         this.setState({show: "top-show"})
     }
-    else if (this.prevScrollpos < currentScrollPos || currentScrollPos == 400) {
+    else if (this.prevScrollpos < currentScrollPos || currentScrollPos === 400) {
         this.setState({show: "no-show-bar"})
     } else {
         this.setState({show: "show-bar"})
@@ -50,9 +49,9 @@ class Navbar extends React.Component{
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                 <ModalHeader toggle={this.toggle}>Contact Page</ModalHeader>
                 <ModalBody>
-                    <li><img src={emailImg}></img><a href="">phillipshalim@gmail.com</a> </li>
-                    <li><img src={githubImg}></img><a href="https://github.com/PhillipsH"> Github</a></li>
-                    <li><img src={linkedInImg}></img><a href="https://www.linkedin.com/in/phillips-halim"> LinkedIn</a></li>
+                    <li><img src={emailImg} alt='email'></img> phillipshalim@gmail.com</li>
+                    <li><img src={githubImg} alt='github'></img><a href="https://github.com/PhillipsH"> Github</a></li>
+                    <li><img src={linkedInImg} alt='linkedin'></img><a href="https://www.linkedin.com/in/phillips-halim"> LinkedIn</a></li>
                 </ModalBody>
                 <ModalFooter>
 
@@ -60,7 +59,7 @@ class Navbar extends React.Component{
                 </Modal>
                 <h2 id='site-name'>Phillips Halim</h2>
                 <nav>
-                    <ul class = "nav-links">
+                    <ul className = "nav-links">
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#works">Works</a></li>

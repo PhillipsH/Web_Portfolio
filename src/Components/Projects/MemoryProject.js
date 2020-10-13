@@ -4,10 +4,6 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
 const MemoryProject = (props) => {
-    const {
-      buttonLabel,
-      className
-    } = props;
   
     const [modal, setModal] = useState(false);
   
@@ -16,9 +12,9 @@ const MemoryProject = (props) => {
     return (
         <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-        <ModalHeader toggle={toggle}>Memory Game</ModalHeader>
+        <ModalHeader toggle={toggle}>Memory Game (2020)</ModalHeader>
         <ModalBody className='project-body'>
-        <img className={'project-pic'} src={memoryImg}></img>
+        <img className={'project-pic'} src={memoryImg} alt='memoryImg'></img>
         <span className='modal-title'>Problem</span><br></br>
         <p>To create a game where users could improve their memory while making it a fun and simple task.</p><br></br>
         <span className='modal-title'>Technologies Used</span><br></br>
@@ -36,8 +32,8 @@ const MemoryProject = (props) => {
 
         </Modal>
         <div id='memory-box' className="project-box" onClick={toggle}>
-            <h2 className='project-title'>Memory Game</h2>
-            <img className={'project-pic'} src={memoryImg}></img>
+            <h2 className='project-title'>Memory Game (2020)</h2>
+            <img className={'project-pic'} src={memoryImg} alt='memoryImg'></img>
         </div>
       </div>
     );

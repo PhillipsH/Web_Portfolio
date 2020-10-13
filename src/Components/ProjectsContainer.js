@@ -15,8 +15,8 @@ class ProjectSection extends React.Component{
             <div id='works' className="project-board">
                 <HomerbotProject></HomerbotProject>
                 <KeebieProject></KeebieProject>
-                <KnowledgeProject></KnowledgeProject>
                 <MemoryProject></MemoryProject>
+                <KnowledgeProject></KnowledgeProject>
                 <DevOpsProject></DevOpsProject>
                 <WashroomProject></WashroomProject>
                 <CompostProject></CompostProject>

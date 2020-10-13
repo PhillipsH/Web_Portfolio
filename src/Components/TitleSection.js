@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Styles/TitleSection.css'
 class TitleSection extends React.Component{
     render(){

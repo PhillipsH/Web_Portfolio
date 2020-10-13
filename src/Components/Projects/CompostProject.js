@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import keebImg from '../../Assets/compostking.png'
+import compostImg from '../../Assets/compostking.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
 const CompostProject = (props) => {
-    const {
-      buttonLabel,
-      className
-    } = props;
   
     const [modal, setModal] = useState(false);
   
@@ -16,9 +12,9 @@ const CompostProject = (props) => {
     return (
       <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-          <ModalHeader toggle={toggle}>CompostKing</ModalHeader>
+          <ModalHeader toggle={toggle}>CompostKing (2018)</ModalHeader>
           <ModalBody>
-          <img className={'project-pic'} src={keebImg}></img>
+          <img className={'project-pic'} src={compostImg}  alt='compostImg'></img>
           <span className='modal-title'>Problem</span><br></br>
           <p>Me and a group of students were given the task of creating a app that would help prevent waste. 
             The one requirement we were given was that the application needed to be a mobile friendly web app. 
@@ -36,8 +32,8 @@ const CompostProject = (props) => {
           </ModalFooter>
         </Modal>
         <div id='compost-box' className="project-box" onClick={toggle}>
-            <h2 className='project-title'>Compost King</h2>
-            <img className={'project-pic'} src={keebImg}></img>
+            <h2 className='project-title'>Compost King (2018)</h2>
+            <img className={'project-pic'} src={compostImg}  alt='compostImg'></img>
         </div>
       </div>
     );

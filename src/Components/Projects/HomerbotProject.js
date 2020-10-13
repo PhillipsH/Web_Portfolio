@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import homerImg from '../../Assets/homerbot.png'
-import mernImg from '../../Assets/mern.jpg'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
 const HomerbotProject = (props) => {
-    const {
-      buttonLabel,
-      className
-    } = props;
   
     const [modal, setModal] = useState(false);
   
@@ -17,9 +12,9 @@ const HomerbotProject = (props) => {
     return (
       <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-        <ModalHeader toggle={toggle}>HomerBot</ModalHeader>
+        <ModalHeader toggle={toggle}>HomerBot (2019)</ModalHeader>
           <ModalBody className='project-body'>
-            <a href='https://innovatebc.ca/news/homer-gets-renters-talking-with-support-of-isi-student-grants/'><img className={'project-pic'} src={homerImg}></img></a>
+            <a href='https://innovatebc.ca/news/homer-gets-renters-talking-with-support-of-isi-student-grants/'><img className={'project-pic'} src={homerImg} alt='homerimg'></img></a>
             <a href='https://innovatebc.ca/news/homer-gets-renters-talking-with-support-of-isi-student-grants/'>https://innovatebc.ca/news/homer-gets-renters-talking-with-support-of-isi-student-grants/</a> <br></br>
             <span className='modal-title'>Problem</span><br></br>
             <p>Choosing the right home is an incredibly important decision everyone makes at least once in their lives and when renters have to make that decision based on websites such as Craigslist
@@ -48,8 +43,8 @@ const HomerbotProject = (props) => {
 
         </Modal>
         <div id='homer-box' className="project-box" onClick={toggle}>
-            <h2 className='project-title'>HomerBot</h2>
-            <img className={'project-pic'} src={homerImg}></img>
+            <h2 className='project-title'>HomerBot (2019)</h2>
+            <img className={'project-pic'} src={homerImg} alt='homerimg'></img>
         </div>
       </div>
     );

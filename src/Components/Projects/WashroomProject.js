@@ -3,11 +3,7 @@ import androidImg from '../../Assets/android-app.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
-const WashroomProject = (props) => {
-    const {
-      buttonLabel,
-      className
-    } = props;
+const WashroomProject = () => {
   
     const [modal, setModal] = useState(false);
   
@@ -16,9 +12,9 @@ const WashroomProject = (props) => {
     return (
       <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-          <ModalHeader toggle={toggle}>Find My Washroom</ModalHeader>
+          <ModalHeader toggle={toggle}>Find My Washroom (2019)</ModalHeader>
           <ModalBody>
-          <img className='project-pic android-img' src={androidImg}></img>
+          <img className='project-pic android-img' src={androidImg} alt='android'></img>
           <span className='modal-title'>Problem</span><br></br>
           <p>Me and a group of students worked with the City of New Westminster to use their city's API's to create an application. 
             We ended creating an Android app to find public washrooms that are located close to you.
@@ -35,9 +31,9 @@ const WashroomProject = (props) => {
             <a href='https://www.google.com'><Button color="secondary" onClick={toggle}>Github</Button></a>
           </ModalFooter>
         </Modal>
-        <div class='washroom-box' className="project-box" onClick={toggle}>
-            <h2 className='project-title'>Find My Washroom</h2>
-            <img className={'project-pic android-img'} src={androidImg}></img>
+        <div id='washroom-box' className="project-box" onClick={toggle}>
+            <h2 className='project-title'>Find My Washroom (2019)</h2>
+            <img className={'project-pic android-img'} src={androidImg} alt='android'></img>
         </div>
       </div>
     );

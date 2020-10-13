@@ -4,10 +4,6 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
 const KnowledgeProject = (props) => {
-    const {
-      buttonLabel,
-      className
-    } = props;
   
     const [modal, setModal] = useState(false);
   
@@ -16,9 +12,9 @@ const KnowledgeProject = (props) => {
     return (
       <div>
         <Modal isOpen={modal} toggle={toggle} className={"modal-project"}>
-        <ModalHeader toggle={toggle}>KnowledgeBase</ModalHeader>
+        <ModalHeader toggle={toggle}>KnowledgeBase (2019)</ModalHeader>
         <ModalBody className='project-body'>
-        <img className={'project-pic'} src={knowledgeImg}></img>
+        <img className={'project-pic'} src={knowledgeImg} alt='knowledgeImg'></img>
         <span className='modal-title'>Problem</span><br></br>
         <p>Me and a group of classmates were provided the task of creating a social media website where users could login, post and message each other among features such as liking.</p><br></br>
         <span className='modal-title'>Technologies Used</span><br></br>
@@ -35,8 +31,8 @@ const KnowledgeProject = (props) => {
 
         </Modal>
         <div id='knowledge-box' className="project-box" onClick={toggle}>
-            <h2 className='project-title'>KnowledgeBase</h2>
-            <img className={'project-pic'} src={knowledgeImg}></img>
+            <h2 className='project-title'>KnowledgeBase (2019)</h2>
+            <img className={'project-pic'} src={knowledgeImg} alt='knowledgeImg'></img>
         </div>
       </div>
     );
