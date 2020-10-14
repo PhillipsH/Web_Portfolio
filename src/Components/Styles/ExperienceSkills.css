@@ -3,6 +3,7 @@
     display:flex;
     width:100%;
     overflow:hidden;
+    font-weight:bold;
 }
 .left-half{
     min-height:100%;

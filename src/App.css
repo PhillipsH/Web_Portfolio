@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .App{
     scroll-behavior: smooth;
-    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Roboto', sans-serif;
 }

@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import homerImg from '../../Assets/homerbot.png'
+import homerImg from '../../Assets/homerbot.png';
+
+import scrapyImg from '../../Assets/scrapy.png';
+import pythonImg from '../../Assets/python.png';
+import nodejsImg from '../../Assets/nodejs.png';
+import dialogflowImg from '../../Assets/dialogflow.png';
+import herokuImg from '../../Assets/heroku.png';
+
+
 import {Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
@@ -32,6 +40,13 @@ const HomerbotProject = (props) => {
                 The nearby and lifestyle feature of Homerbot was built using Node.js, Express and Dialogflow. These features implemented RESTful API's such as Google Maps API's.
                 
             </p>
+            <div className='tech-modal'>
+              <img className={'project-tech-img'} src={scrapyImg} alt='homerimg'></img>
+              <img className={'project-tech-img'} src={pythonImg} alt='homerimg'></img>
+              <img className={'project-tech-img'} src={nodejsImg} alt='homerimg'></img>
+              <img className={'project-tech-img'} src={dialogflowImg} alt='homerimg'></img>
+              <img className={'project-tech-img'} src={herokuImg} alt='herokuimg'></img>
+            </div>
             <span className='modal-title'>Notes</span>
             <p>
                 Gaining experience in a start-up was a fun interesting experience, having hands on experience with tasks other the software development. Seeing what goes into creating a company

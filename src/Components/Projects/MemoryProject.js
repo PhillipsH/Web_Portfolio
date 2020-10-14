@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import htmlImg from '../../Assets/html5.png'
+import cssImg from '../../Assets/css3.png'
+import javascriptImg from '../../Assets/javascript.png'
+import mySqlImg from '../../Assets/mysql.svg';
+import herokuImg from '../../Assets/heroku.png'
 import memoryImg from '../../Assets/memory.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
@@ -18,8 +23,15 @@ const MemoryProject = (props) => {
         <span className='modal-title'>Problem</span><br></br>
         <p>To create a game where users could improve their memory while making it a fun and simple task.</p><br></br>
         <span className='modal-title'>Technologies Used</span><br></br>
+        <div className='tech-modal'>
+          <img className={'project-tech-img'} src={htmlImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={cssImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={javascriptImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={mySqlImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={herokuImg} alt='herokuimg'></img>
+        </div>
         <p>This website was a project I made using HTML, CSS and Node.js. The leaderboards database that was chosen for this website was MySQL as I had previous projects built using MySQL.
-          The Website itself was hosted on heroku.
+          The memory game was built using the MVC architecture. The Website itself was hosted on heroku.
         </p>
         <span className='modal-title'>Notes</span>
         <p>This was a fun project to work on because it was something that you were actually able to interact with and play with afterwards.

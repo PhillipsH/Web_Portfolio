@@ -11,7 +11,7 @@ class ExperienceSkillsContainer extends React.Component{
         super(props)
         this.cstContent = "Learned concepts like, Object Oriented Programming, programming languages such as C++ and Java, and studied algorithms and math concepts. Also created multiple projects with teams and individually such as websites, apps and games."
         this.internContent = "Created a web scraper and created a lifestyle and nearby feature for the chatbot that would cater towards peoples needs. Look below for more info."
-        this.practicumContent = "Worked along with other students to create a slack chatbot that would display homes for renters"
+        this.practicumContent = "Worked along with other students to create a slack chatbot that would display homes for renters."
         this.hsContent = "Took Programming 11, 12, 13(Honors) courses throughout my years in highschool making a forumn a game and learning basic algorithms."
     }
 

@@ -7,6 +7,7 @@ import WashroomProject from './Projects/WashroomProject';
 import DevOpsProject from './Projects/DevOpsProject';
 import MemoryProject from './Projects/MemoryProject';
 import CompostProject from './Projects/CompostProject';
+import PortfolioProject from './Projects/PortfolioProject'
 
 class ProjectSection extends React.Component{
 
@@ -14,6 +15,7 @@ class ProjectSection extends React.Component{
         return(
             <div id='works' className="project-board">
                 <HomerbotProject></HomerbotProject>
+                <PortfolioProject></PortfolioProject>
                 <KeebieProject></KeebieProject>
                 <MemoryProject></MemoryProject>
                 <KnowledgeProject></KnowledgeProject>

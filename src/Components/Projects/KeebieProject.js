@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import keebImg from '../../Assets/keebie.PNG'
 import mernImg from '../../Assets/mern.jpg'
+import reduxImg from '../../Assets/redux.png'
+import mongodbImg from '../../Assets/mongodb.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
@@ -20,7 +22,11 @@ const Project = (props) => {
             <p>A hobby that i recently got in to was the art of building keyboards. One thing that I couldn't find online was one website with the information of switches from
               all kinds of brands. I decided to build one for myself and other keyboard enthusists who may find this website useful.</p><br></br>
             <span className='modal-title'>Technologies Used</span><br></br>
-            <img id='mern-img' src={mernImg} alt='mern'></img><br></br>
+            <div className='tech-modal'>
+              <img className='project-tech-img' src={mernImg} alt='mern'></img><br></br>
+              <img className='project-tech-img' src={mongodbImg} alt='mern'></img><br></br>
+              <img className='project-tech-img' src={reduxImg} alt='redux'></img><br></br>
+            </div>
             <p>This website was build using the MERN (Mongodb, Express, React.js, Node.js) stack. I implemented Redux to manage the application state, as the state had to change
               after retreiving from the database. </p>
             <span className='modal-title'>Notes</span>
@@ -29,12 +35,12 @@ const Project = (props) => {
             </p>
           </ModalBody>
           <ModalFooter>
-            <a href='https://www.google.com'><Button color="primary" onClick={toggle}>Website</Button></a>
-            <a href='https://www.google.com'><Button color="secondary" onClick={toggle}>Github</Button></a>
+            <a href='http://www.keebie.io'><Button color="primary" onClick={toggle}>Website</Button></a>
+            <a href='https://github.com/PhillipsH/keebie'><Button color="secondary" onClick={toggle}>Github</Button></a>
           </ModalFooter>
 
         </Modal>
-        <div id='keebie-box' className="project-box" onClick={toggle}>
+        <div id='portfolio-box' className="project-box" onClick={toggle}>
             <h2 className='project-title'>Keebie.io (2020)</h2>
             <img className={'project-pic'} src={keebImg} alt='keebimg'></img>
         </div>

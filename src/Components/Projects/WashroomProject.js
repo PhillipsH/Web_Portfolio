@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import androidImg from '../../Assets/android-app.png'
+
+import firebaseImg from '../../Assets/firebase.png'
+import javaImg from '../../Assets/java.png'
+import androidstudioImg from '../../Assets/androidstudio.png'
+
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
@@ -20,8 +25,13 @@ const WashroomProject = () => {
             We ended creating an Android app to find public washrooms that are located close to you.
              Users were also able to review and rate each washroom they went to as well as locate the fastest way to get there.</p><br></br>
           <span className='modal-title'>Technologies Used</span><br></br>
+          <div className='tech-modal'>
+          <img className={'project-tech-img'} src={firebaseImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={javaImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={androidstudioImg} alt='homerimg'></img>
+        </div>
           <p>We built this application using Android Studio and using Java as the primary language. We used RESTful API's such as the cities API and the Google Maps API to recieve data. 
-            Finally, for the reviews and ratings was built using Google's Firebase</p>
+            Finally, for the reviews and ratings was built using Google's Firebase.</p>
           <span className='modal-title'>Notes</span>
           <p>Android Studio was incredibly difficult to work with in the beginning because at times when we would pull from git, the application wouldn't work on some of our groupmates computers while working on others.
             Eventually we got the hang of this problem by messing with the gradle versions.

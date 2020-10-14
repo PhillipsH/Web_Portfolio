@@ -18,7 +18,7 @@ const DevOpsProject = (props) => {
           <span className='modal-title'>Problem</span><br></br>
           <p>Create a pipeline that hosts a web app  making it easier to develop and test.</p><br></br>
           <span className='modal-title'>Technologies Used</span><br></br>
-          <p>The app we hosted was a simple snake game. We used github, TravisCI, docker and heroku for the pipelien.</p>
+          <p>The app we built and hosted was a simple snake game created in Python. We used github, TravisCI, docker and heroku for the pipeline.</p>
           <span className='modal-title'>Notes</span>
           <p>
 

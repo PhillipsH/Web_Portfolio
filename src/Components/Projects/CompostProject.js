@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import compostImg from '../../Assets/compostking.png'
+import compostImg from '../../Assets/CompostKing.png'
+
+import htmlImg from '../../Assets/html5.png'
+import cssImg from '../../Assets/css3.png'
+import javascriptImg from '../../Assets/javascript.png'
+import firebaseImg from '../../Assets/firebase.png';
+import azureImg from '../../Assets/azure.jpg';
+
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import '../Styles/Project.css';
 
@@ -21,6 +28,13 @@ const CompostProject = (props) => {
             We thought it was best to create a game for children to teach them about composting. 
             </p><br></br>
           <span className='modal-title'>Technologies Used</span><br></br>
+          <div className='tech-modal'>
+          <img className={'project-tech-img'} src={htmlImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={cssImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={javascriptImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={firebaseImg} alt='homerimg'></img>
+          <img className={'project-tech-img'} src={azureImg} alt='herokuimg'></img>
+        </div>
           <p>We built this application using HTML, CSS , and Javascript. We used the Javascript framework, Phaser.js for all the gameplay of the app. 
             The database was built using Firebase Firestore. The website itself was hosted on Microsoft Azure.</p>
           <span className='modal-title'>Notes</span>
